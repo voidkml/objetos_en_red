@@ -16,10 +16,10 @@ int lastMessageCount;
 boolean firstCheck = true;
 String[] command;
 
-String email = "usuario@gmail.com";
+String email = "gitgrupo4@gmail.com";
 String smtp_host = "smtp.gmail.com";
 String imap_host = "imap.gmail.com";
-String pass = "password";
+String pass = "Contrasena";
 
 long past;
 long interval = 10000;
@@ -183,7 +183,7 @@ void executeCommand(String[] command){
   println("name " + name);
   println("param " + parameter);
   
-  if(name.equals("led1")){
+  if(name.equals("led")){
     if(parameter.equals("on")){
       ser.write('A');
     }else if(parameter.equals("off")){
